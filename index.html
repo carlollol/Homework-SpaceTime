@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Planet Express Scheduler</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/style.css">
+    
+</head>
+<body>
+	
+	<div class = "container">
+		<div class = "jumbotron">
+			<h1>Planet Express Scheduler</h1>
+		</div>
+		
+		<div class = "col-lg-12">
+			
+		</div>
+		
+        <div class="panel panel-primary">
+        	<div class="panel-heading">
+            	<h3 class="panel-title"><strong>Planet Express Schedule Time</strong></h3>
+            </div>
+            
+            <div class="panel-body">
+            	<table class="table table-hover" id='ep-table'>
+                	<thead>
+                  		<tr>
+                    		<th>Unit Name</th>
+                    		<th>Destination</th>
+                    		<th>Frequency (min)</th>
+                    		<th>Next Arrival</th>
+                    		<th>Estimated Time Arrival (Minutes)</th>
+                		</tr>
+                	</thead>
+                	<tbody>
+                	</tbody>
+            	</table>
+            </div>
+        </div>
+	
+
+          <!-- Add Employee  -->
+	    <div class="panel panel-primary">
+	        <div class="panel-heading">
+	            <h3 class="panel-title"><strong>Administrator Panel</strong></h3>
+	        </div>
+	    
+	    <div class="panel-body">
+	        <form>
+	            <div class="form-group">
+	                <label for="planetExpress-unit-id">Planet Express Unit Name</label>
+	                <input class="form-control" id="planetExpress-unit-id" type="text">
+	            </div>
+	            <div class="form-group">
+	                <label for="destination">Destination</label>
+	                <input class="form-control" id="destination" type="text">
+	            </div>
+	            <div class="form-group">
+	                <label for="start-time">First Departure Time (HH:MM Military Time)</label>
+	                <input class="form-control" id="start-time" type="text">
+	            </div>
+	            <div class="form-group">
+	                <label for="frequency">Frequency (minutes)</label>
+	                <input class="form-control" id="frequency" type="text">
+	            </div>
+	                <button class="btn btn-primary" id="finalize-pod-info" type="submit">Submit</button>
+	        </form>
+
+	    </div>
+
+	    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
