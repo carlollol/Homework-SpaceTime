@@ -1,0 +1,25 @@
+body {
+	background: url("./images/futurama_bg.jpg");
+	background-repeat: no-repeat;
+	width:100%;
+	height: auto;
+}
+
+.jumbotron {
+	background-color: #49CF4E;
+}
+
+.panel-primary {
+	border-color: #49CF4E;
+}
+
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #49CF4E;
+    border-color: #49CF4E;
+}
+
+.btn-primary {
+	background-color: #49CF4E;
+	border-color: #49CF4E;
+}
